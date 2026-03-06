@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SamScript Agency</title>
+  <script>
+    // GitHub Pages SPA redirect: store the path and redirect to /
+    // The main app will pick up the stored path and navigate
+    sessionStorage.setItem('spa-redirect', window.location.pathname);
+    window.location.replace('/');
+  </script>
+</head>
+<body>
+  <noscript>
+    <div style="max-width:600px;margin:80px auto;padding:0 20px;font-family:system-ui,sans-serif;text-align:center;">
+      <h1>Page Not Found</h1>
+      <p>The page you're looking for doesn't exist.</p>
+      <p><a href="/">Go back to SamScript Agency</a></p>
+    </div>
+  </noscript>
+</body>
+</html>
